@@ -26,15 +26,14 @@ public void loginfunctionality(ChromeDriver driver, Properties pr1)
 	WebElement email=driver.findElement(By.xpath(pr.getProperty("email")));
 	email.sendKeys(pr1.getProperty("email"));
 	
-     Waits.implicitwait(driver, 10);
+     Waits.implicitwait(driver, 30);
 	WebElement password= driver.findElement(By.xpath(pr.getProperty("password")));
 	password.sendKeys(pr1.getProperty("password"));
 	
-	Waits.implicitwait(driver, 10);
 	
 	WebElement login= driver.findElement(By.xpath(pr.getProperty("login")));
 	login.click();
-	Waits.implicitwait(driver, 40);
+	
 }
 
 }
